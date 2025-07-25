@@ -194,7 +194,7 @@ const ProfileScreen = ({ navigation }) => {
   };
 
   const uploadImageToCloudinary = async (id, imageUri, onSuccess, onError) => {
-    const cloudName = 'drw5oxio0';
+    const cloudName = '';
     const uploadPreset = 'default';
     if (!imageUri) return;
 
