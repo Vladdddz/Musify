@@ -3,11 +3,11 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA29s6zDjURn0KHX4Qo7Ny60F1DMoyqFgU",
-  authDomain: "musify-9d2ec.firebaseapp.com",
-  projectId: "musify-9d2ec",
-  storageBucket: "gs://musify-9d2ec.firebasestorage.app/",
-  appId: "1:1012357029172:android:4703537bad1629b0041961"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  appId: ""
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
