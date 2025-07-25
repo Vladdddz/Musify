@@ -30,8 +30,8 @@ export const fetchImageFromApiLink = async (apiLink) => {
 export const getAccessToken = async () => {
   
 
-  const CLIENT_ID = '1b6160fbd80649ebbe915e4f2bdb6808';
-  const CLIENT_SECRET = 'adce559f49d045efabe2bb42f5b5e643';
+  const CLIENT_ID = '';
+  const CLIENT_SECRET = '';
 
   const credentials = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64');
 
@@ -85,7 +85,7 @@ export const searchSongs = async (query) => {
     const TrackKeys=[];
     for(const track of data.tracks.items)
     {
-      const TrackAndArtist=`${track.name.toLowerCase()}+${track.artists[0].name.toLowerCase()}`; //cheie pentru fiecare melodie ca sa elimin duplicatele
+      const TrackAndArtist=`${track.name.toLowerCase()}+${track.artists[0].name.toLowerCase()}`;
      if(!TrackKeys.includes(TrackAndArtist))
         {
           TrackKeys.push(TrackAndArtist);       
